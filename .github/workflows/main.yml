@@ -42,4 +42,4 @@ jobs:
 
       # Push Docker image to DockerHub
       - name: Push Docker image to DockerHub
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/DevOps2026:latest .
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/DevOps2026:latest 
