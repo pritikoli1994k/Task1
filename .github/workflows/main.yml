@@ -30,7 +30,7 @@ jobs:
 
       # Build Docker image
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/elevatelab/Task1:latest .
+        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/elevatelab:latest .
 
       # Login to DockerHub
       - name: Login to DockerHub
@@ -41,4 +41,4 @@ jobs:
 
       # Push Docker image to DockerHub
       - name: Push Docker image to DockerHub
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/elevatelab/Task1:latest
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/elevatelab:latest
