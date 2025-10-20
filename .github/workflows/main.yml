@@ -37,9 +37,9 @@ jobs:
 
       # Build Docker image
       - name: Build Docker image
-        run: docker build -f ./Dockerfile -t ${{ secrets.DOCKERHUB_USERNAME }}/elevatetask1:latest .
+        run: docker build -f ./Dockerfile -t ${{ secrets.DOCKERHUB_USERNAME }}/DevOps 2026:latest .
 
 
       # Push Docker image to DockerHub
       - name: Push Docker image to DockerHub
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/elevatetask1:latest
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/DevOps2026:latest
